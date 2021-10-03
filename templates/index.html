@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple UI for OCR script</title>
+</head>
+
+<body>
+
+    <!-- main content -->
+    <h1>Upload a file (PDF only): </h1>
+    <form action="/upload_file" method="POST" enctype="multipart/form-data">
+        <input type="file" name=file accept="application/pdf">
+        <input type="submit" value="Upload">
+    </form>
+    <br><br>
+
+    {% if result_list %}
+    <h1>Latest Result:</h1>
+    <div><b style="font-size: 20px;">Uploaded File:</b> {{ file_name }}</div>
+    <div id="result">{{ result_list }}</div>
+    {% endif %}
+    
+    {% if error_message %}
+        <h1>Error:</h1>    
+        <div style="font-size: 20px;display:inline;">{{ error_message }}</div>
+    {% endif %}
+
+    <!-- reformats result string to html list -->
+    <script>
+
+        // grab result string
+        var array = document.getElementById('result').innerHTML
+
+        // removing characters for converting string to array 
+        array = array.replace(/['"\[\]]+/g, '')
+
+        // turn into array
+        array = array.split(',')
+
+        // turns array to html list
+        var list = document.createElement('ul');
+        for (var i = 0; i < array.length; i++) {
+
+            // Create the list item:
+            var item = document.createElement('li');
+
+            // Set its contents:
+            item.appendChild(document.createTextNode(array[i]));
+
+            // Add it to the list:
+            list.appendChild(item);
+        }
+
+        // change result to new html list
+        document.getElementById('result').innerHTML = '<b style="font-size: 20px;">Output:</b>'
+        document.getElementById('result').appendChild(list)
+        document.getElementById('result').style.display = 'inline-block'
+
+    </script>
+</body>
+
+</html>
