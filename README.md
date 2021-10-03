@@ -3,7 +3,7 @@ This projects purpose is to serve as a starter template for running an OCR scrip
 
 A simple python flask implementation is used to upload the pdf file. Once uploaded it calls the optical character recognition python script (ocr.py) to extract job-titles. This script was initially created to extract job titles from a pdf, but it can be modified to extract pretty much anything from a pdf as long as it's supplied with the correct lists. Currently a sample text file containing job titles every line is uploaded, but it can be changed to whatever list of strings wanted as long as the list contains a string on every new line. Rewrite the 'job_titles.txt' file to your required job titles or to use multiple files simply upload the list to the project root folder and add it to the 'file_list' in ocr.py.
 
-## Requirements:
+## Specifications:
 - Python Flask for a quick User-Interface.
 - Python-Tessarect for the OCR.
 - pdf2image to convert PDF files to image files needed for the OCR
