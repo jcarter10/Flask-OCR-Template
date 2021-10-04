@@ -90,9 +90,12 @@ def extractJobTitles(pdf_text):
     # remove duplicates in job_list
     job_list = list(dict.fromkeys(job_list))
 
+    # lowercasing pdf_text for comparisons (so we don't have to do it each iteration)
+    pdf_text = pdf_text.lower()
+
     # compare each job in job_list to pdf text to find matches
     for job in job_list:
-        if job in pdf_text:
+        if job.lower() in pdf_text:
             results.append(job)
 
     # clean results before return
