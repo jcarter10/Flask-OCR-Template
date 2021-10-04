@@ -14,10 +14,12 @@ A simple python flask implementation is used to upload the pdf file. Once upload
 - to start the project simply run "python api.py" (from project root folder).
 
 ## Input/Output:
+Input:
 <p align="center">
   <img src="assets/pdf_example.PNG">
 </p>
-     
+
+Output:
 <p align="center">
   <img src="assets/output.PNG">
 </p>
