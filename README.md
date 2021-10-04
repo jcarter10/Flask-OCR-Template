@@ -13,5 +13,10 @@ A simple python flask implementation is used to upload the pdf file. Once upload
 - cd to the root of the project and download the requirements.txt file by typing 'pip install -r requirements.txt', this will download all the neccessary libraries. If you don't want to install them on your machine then create a virtual enviornment for python, start the enviornment, and then use the above command.  
 - to start the project simply run "python api.py" (from project root folder).
 
-
+## Input/Output:
+<img src="assets/pdf_example.PNG"
+     alt="Input"/>
+     
+<img src="assets/output.PNG"
+     alt="Input"/>
 
