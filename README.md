@@ -22,4 +22,4 @@ A simple python flask implementation is used to upload the pdf file. Once upload
   <img src="assets/output.PNG">
 </p>
 
-As you can see the ouput is missing Finance Intern, or Intern in general. This is because our job_list does not cotain those job titles, the output will only be relevant to the occupation lists provided. 
+As you can see the ouput is missing Accounting, Finance Intern, or Intern in general. This is because our job_list does not cotain those job titles, the output will only be relevant to the occupation lists provided. 
