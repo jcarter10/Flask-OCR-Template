@@ -14,9 +14,12 @@ A simple python flask implementation is used to upload the pdf file. Once upload
 - to start the project simply run "python api.py" (from project root folder).
 
 ## Input/Output:
-<img src="assets/pdf_example.PNG"
-     alt="Input"/>
+<p align="center">
+  <img src="assets/pdf_example.PNG">
+</p>
      
-<img src="assets/output.PNG"
-     alt="Input"/>
+<p align="center">
+  <img src="assets/output.PNG">
+</p>
 
+As you can see the ouput is missing Finance Intern, or Intern in general. This is because our job_list does not cotain those job titles, the output will only be relevant to the occupation lists provided. 
