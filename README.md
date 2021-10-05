@@ -24,4 +24,4 @@ Output:
   <img src="assets/output.PNG">
 </p>
 
-As you can see the ouput is missing Accounting, Finance Intern, or Intern in general. This is because our job_list does not cotain those job titles, the output will only be relevant to the occupation lists provided. 
+If you look at the pdf, the ouput is missing Accounting, Finance Intern, and Intern. This is because our job_list does not cotain those job titles, the output will only be relevant to the occupation lists provided. Our list contained Education, Job Analyst, and Analyst so the output is correct for this specific list. 
