@@ -67,7 +67,7 @@ def extractJobTitles(pdf_text):
     job_list = []
     results = []
 
-    # read each job title from each file in list
+    # read each job title from each file in the lists
     for current_file in file_list:
 
         # validate file
