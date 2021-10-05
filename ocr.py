@@ -86,8 +86,12 @@ def extractJobTitles(pdf_text):
                 # basic case
                 else:
                     job_list.append(line)
+    
+    # make list lowercase
+    for i in range(len(job_list)):
+        job_list[i] = job_list[i].lower()
 
-    # remove duplicates in job_list
+    # remove duplicates
     job_list = list(dict.fromkeys(job_list))
 
     # lowercasing pdf_text for comparisons (so we don't have to do it each iteration)
